@@ -1,0 +1,26 @@
+---
+title: "lab_8"
+author: "Elizabeth, Zach, & Esmeralda"
+date: "11/10/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.height = 8, fig.width = 6.5)
+```
+
+## Commit 1
+```{r}
+library(tidyverse)
+library(here)
+library(rio)
+library(janitor)
+
+data <- import(here("data", "star.csv"))
+```
+
+## Commit 2
+```{r}
+
+```
+
