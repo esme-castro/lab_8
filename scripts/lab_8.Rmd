@@ -16,6 +16,10 @@ library(tidyverse)
 library(here)
 library(rio)
 library(janitor)
+library (knitr)
+library(tinytex)
+tinytex::install_tinytex()
+
 
 data <- import(here("data", "star.csv"))
 ```
@@ -31,8 +35,22 @@ Some additional references were used to complete the requirements for this assig
 
 ## Commit 3
 ```{r}
+data %>%
+  group_by(sex, frl) %>%
+  summarize(math_mean = mean(tmathss), math_sd = sd(tmathss), rdg_mean = mean(treadss), rdg_sd = sd(treadss))
 
 ```
+```{r}
+data %>%
+  group_by(sex, frl) %>%
+  summarize(math_mean = mean(tmathss), math_sd = sd(tmathss), rdg_mean = mean(treadss), rdg_sd = sd(treadss)) %>%
+    kable(col.names= c("sex", "frl", "math_mean", "math_sd", "rdg_mean", "rdg_sd"), 
+        digits = 2, 
+        booktabs = FALSE)
+  
+  
+```
+
 
 
 \newpage
