@@ -3,6 +3,7 @@ title: "lab_8"
 author: "Elizabeth, Zach, & Esmeralda"
 date: "11/10/2021"
 output: pdf_document
+bibliography: lab_8.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -19,8 +20,20 @@ library(janitor)
 data <- import(here("data", "star.csv"))
 ```
 
+
 ## Commit 2
 ```{r}
 
 ```
+In this markdown, the following packages were used @tidyverse, @here, @rio, and @janitor
 
+Some additional references were used to complete the requirements for this assignment: [@xu2020correlates], [@nebeling2020flashe], [@nebeling2017family], and [@nebeling2017flashe]
+
+## Commit 3
+```{r}
+
+```
+
+
+\newpage
+# References
