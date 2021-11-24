@@ -60,6 +60,7 @@ data %>%
   theme(legend.position = "bottom")
 ```
 
+Awesome work, nice job, team! - You might want to add to the global options warning=FALSE and message=FALSE - Love the package citations! also, include the name of the packages before the citations themselves. e.g., In this markdown, the following packages were used: tidyverse @tidyverse, here @here, rio @rio, and janitor @janitor. - Great kable()! - What happened to the figure? I see the code but no output. I am thinking you did not render after adding the code?
 
 \newpage
 # References
